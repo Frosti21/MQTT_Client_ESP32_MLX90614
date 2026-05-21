@@ -65,9 +65,6 @@ static void mqtt5_app_start(void)
         .broker.address.uri = "mqtt://172.20.10.2:1883",
         .session.protocol_ver = MQTT_PROTOCOL_V_5,
         .network.disable_auto_reconnect = false,
-        //.credentials.username = "UserName",
-        //.credentials.authentication.password = "+++++++",
-
     };
 
     client = esp_mqtt_client_init(&mqtt5_cfg);
