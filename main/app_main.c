@@ -38,9 +38,6 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
         case MQTT_EVENT_CONNECTED:
             // Subscriben
             mqtt_connected = true;
-            //esp_mqtt_client_subscribe(client, "/Wohnzimmer/Temp", 1);
-            // Erste Nachricht senden
-            //esp_mqtt_client_publish(client, "/Wohnzimmer/Temp", "online", 0, 1, 0);
             break;
 
         case MQTT_EVENT_DATA:
