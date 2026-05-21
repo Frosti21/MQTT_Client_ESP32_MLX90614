@@ -92,7 +92,7 @@ static void sensor_task(void *pvParameters){
 
     }
 }
-static void sende_task(void *pvParameters) {
+static void sended_task(void *pvParameters) {
     sensor_data_t data;
     char payload[64];
 
